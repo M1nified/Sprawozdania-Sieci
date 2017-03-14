@@ -33,7 +33,7 @@ Switch#show ip interface vlan 1
 ```
 
 
-# Zadanie B: Konfigurowanie VLAN przełącznika Cisco Catalyst
+### Zadanie B: Konfigurowanie VLAN przełącznika Cisco Catalyst
 ```
 Switch#show vlan
 Switch(config)#vlan 20 % tworzenie VLAN
@@ -54,7 +54,7 @@ Switch(config-if)#switchport access vlan 20
 ```
 
 
-# Zadanie C: Tworzenie VLAN trunks i tagowanych VLAN w przełącznikach Cisco Catalyst
+### Zadanie C: Tworzenie VLAN trunks i tagowanych VLAN w przełącznikach Cisco Catalyst
 VLANy tworzymy dzięki ramkom IEEE 802.1Q. Potrzebujemy też trunka, który nie należy do żadnego VLANu.
 ```
 Switch(config-if)#switchport mode trunk 
@@ -86,7 +86,7 @@ Switch(config-if)#switchport trunk native vlan 10
 ```
 
 
-# Zadanie D: VLAN i protokół VTP (Virtual LAN Trunking Protocol) 
+### Zadanie D: VLAN i protokół VTP (Virtual LAN Trunking Protocol) 
 Konfigurację VLAN możemy rozsyłać między przełącznikami w ramach tej samej domeny VTP. Przełącznik może pracować jako *server* (rozsyła konfigurację), *transparent* (przekazuje), *client* (odbiera i stosuje konfigurację). Na trasie rozsyłania muszą być tylko kompatybilne przełączniki w tej samej domenie.
 ```
 Switch(config)#vtp domain domena
